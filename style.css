@@ -237,69 +237,99 @@ nav a:hover{
 /* ------------------------------------------------------------------------------------ */
 
 @media (max-width: 768px) {
+  /* General Reset */
+  body, html {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
   header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+    position: relative;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+
+  .content {
+    text-align: center;
+    padding: 20px;
     flex-direction: column;
     gap: 20px;
   }
 
-  nav {
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .content {
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
-  }
-
   .content h1 {
-    font-size: 64px;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .content p {
+    font-size: 16px;
   }
 
   .about {
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    padding: 10px 20px;
     text-align: center;
   }
 
-  .project-head,
-  .about-head {
-    margin-left: 0;
-    text-align: center;
-    font-size: 32px;
+  .about img,
+  .content img {
+    width: 80%;
+    height: auto;
+    max-width: 300px;
+  }
+
+  .project-head, .about-head {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
   }
 
   .card {
     width: 90%;
+    max-width: 350px;
+    margin: auto;
   }
 
   .footer {
-    padding: 30px 15px;
+    text-align: center;
+    padding: 15px;
   }
 
-  .footer div {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .footer .social-icon {
-    margin: 10px;
+  .social-icon {
+    width: 28px;
+    height: 28px;
+    margin: 0 6px;
   }
 
   button.contact {
-    width: 100px;
-  }
-
-  img.image {
-    width: 80%;
-    height: auto;
-  }
-
-  img[alt="skills"] {
-    width: 90%;
+    width: 130px;
+    font-size: 14px;
+    padding: 8px 12px;
   }
 }
-
-
